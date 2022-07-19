@@ -1,4 +1,4 @@
-import React from "react";
+import TextField from "@mui/material/TextField";
 
 export default function Input({ onChange, ...rest }) {
   const handleChange = (e) => {
@@ -7,7 +7,7 @@ export default function Input({ onChange, ...rest }) {
 
   return (
     <div>
-      <input onChange={handleChange} {...rest} />
+      <TextField variant="outlined" onChange={handleChange} {...rest} />
     </div>
   );
 }
